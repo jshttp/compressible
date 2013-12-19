@@ -1,0 +1,654 @@
+[
+  {
+    "mime": "application/atom+xml",
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/Atom_(standard)"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/ecmascript",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/EDI-X12",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/EDIFACT",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/json",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/javascript",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/octet-stream",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/ogg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/pdf",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/postscript",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/rdf+xml",
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/RDF/XML"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/rss+xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/soap+xml",
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/SOAP"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/font-woff",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/xhtml+xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/xml-dtd",
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/Document_type_definition"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/xop+xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/zip",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/gzip",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/basic",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/L24",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/mp4",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/mpeg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/ogg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/vorbis",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/vnd.rn-realaudio",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/vnd.wave",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/webm",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/gif",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/jpeg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/pjpeg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/png",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/svg+xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/tiff",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "message/http",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "message/imdn+xml",
+    "compressible": true,
+    "sources": [
+      "http://tools.ietf.org/html/rfc5438"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "message/partial",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "message/rfc822",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/example",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/iges",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/mesh",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/vrml",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/x3d+binary",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/x3d+vrml",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "model/x3d+xml",
+    "compressible": true,
+    "sources": [
+      "http://edutechwiki.unige.ch/en/X3D_file_structure"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/mixed",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/alternative",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/related",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/form-data",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/signed",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "multipart/encrypted",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/cmd",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/css",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/csv",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/html",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/javascript",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/plain",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/vcard",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/xml",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/mpeg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/mp4",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/ogg",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/quicktime",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/webm",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/x-matroska",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/x-ms-wmv",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "video/x-flv",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.oasis.opendocument.text",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.oasis.opendocument.spreadsheet",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.oasis.opendocument.presentation",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.oasis.opendocument.graphics",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.ms-excel",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.ms-powerpoint",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.ms-opentype",
+    "compressible": true,
+    "sources": [
+      "http://www.phpied.com/gzip-your-font-face-files/"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.ms-fontobject",
+    "compressible": true,
+    "sources": [
+      "http://www.phpied.com/gzip-your-font-face-files/"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.mozilla.xul+xml",
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/XUL"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.google-earth.kml+xml",
+    "compressible": true,
+    "sources": [
+      "https://developers.google.com/kml/documentation/kml_tut"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.google-earth.kmz",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.dart",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.android.package-archive",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/vnd.ms-xpsdocument",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-7z-compressed",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-deb",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-dvi",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-font-ttf",
+    "compressible": true,
+    "sources": [
+      "http://www.phpied.com/gzip-your-font-face-files/"
+    ],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-javascript",
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-latex",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-mpegURL",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-rar-compressed",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-shockwave-flash",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-stuffit",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-tar",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-www-form-urlencode",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-xpinstall",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/x-aac",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "audio/x-caf",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "image/x-xcf",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/x-gwt-rpc",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/x-jquery-tmpl",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "text/x-markdown",
+    "compressible": null,
+    "sources": [],
+    "notes": ""
+  },
+  {
+    "mime": "application/x-pkcs1",
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  }
+]
