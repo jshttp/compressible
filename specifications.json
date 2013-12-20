@@ -1,654 +1,549 @@
-[
-  {
-    "mime": "application/atom+xml",
+{
+  "application/atom+xml": {
     "compressible": true,
     "sources": [
       "http://en.wikipedia.org/wiki/Atom_(standard)"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/ecmascript",
+  "application/ecmascript": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/EDI-X12",
+  "application/EDI-X12": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/EDIFACT",
+  "application/EDIFACT": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/json",
+  "application/json": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/javascript",
+  "application/javascript": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/octet-stream",
+  "application/octet-stream": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/ogg",
+  "application/ogg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/pdf",
+  "application/pdf": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/postscript",
+  "application/postscript": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/rdf+xml",
+  "application/rdf+xml": {
     "compressible": true,
     "sources": [
       "http://en.wikipedia.org/wiki/RDF/XML"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/rss+xml",
+  "application/rss+xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/soap+xml",
+  "application/soap+xml": {
     "compressible": true,
     "sources": [
       "http://en.wikipedia.org/wiki/SOAP"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/font-woff",
+  "application/font-woff": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/xhtml+xml",
+  "application/xhtml+xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/xml",
+  "application/xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/xml-dtd",
+  "application/xml-dtd": {
     "compressible": true,
     "sources": [
       "http://en.wikipedia.org/wiki/Document_type_definition"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/xop+xml",
+  "application/xop+xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/zip",
+  "application/zip": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/gzip",
+  "application/gzip": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/basic",
+  "audio/basic": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/L24",
+  "audio/L24": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/mp4",
+  "audio/mp4": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/mpeg",
+  "audio/mpeg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/ogg",
+  "audio/ogg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/vorbis",
+  "audio/vorbis": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/vnd.rn-realaudio",
+  "audio/vnd.rn-realaudio": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/vnd.wave",
+  "audio/vnd.wave": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/webm",
+  "audio/webm": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/gif",
+  "image/gif": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/jpeg",
+  "image/jpeg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/pjpeg",
+  "image/pjpeg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/png",
+  "image/png": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/svg+xml",
+  "image/svg+xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/tiff",
+  "image/tiff": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "message/http",
+  "message/http": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "message/imdn+xml",
+  "message/imdn+xml": {
     "compressible": true,
     "sources": [
       "http://tools.ietf.org/html/rfc5438"
     ],
     "notes": ""
   },
-  {
-    "mime": "message/partial",
+  "message/partial": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "message/rfc822",
+  "message/rfc822": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/example",
+  "model/example": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/iges",
+  "model/iges": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/mesh",
+  "model/mesh": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/vrml",
+  "model/vrml": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/x3d+binary",
+  "model/x3d+binary": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/x3d+vrml",
+  "model/x3d+vrml": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "model/x3d+xml",
+  "model/x3d+xml": {
     "compressible": true,
     "sources": [
       "http://edutechwiki.unige.ch/en/X3D_file_structure"
     ],
     "notes": ""
   },
-  {
-    "mime": "multipart/mixed",
+  "multipart/mixed": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "multipart/alternative",
+  "multipart/alternative": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "multipart/related",
+  "multipart/related": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "multipart/form-data",
+  "multipart/form-data": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "multipart/signed",
+  "multipart/signed": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "multipart/encrypted",
+  "multipart/encrypted": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/cmd",
+  "text/cmd": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/css",
+  "text/css": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/csv",
+  "text/csv": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/html",
+  "text/html": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/javascript",
+  "text/javascript": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/plain",
+  "text/plain": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/vcard",
+  "text/vcard": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/xml",
+  "text/xml": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/mpeg",
+  "video/mpeg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/mp4",
+  "video/mp4": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/ogg",
+  "video/ogg": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/quicktime",
+  "video/quicktime": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/webm",
+  "video/webm": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/x-matroska",
+  "video/x-matroska": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/x-ms-wmv",
+  "video/x-ms-wmv": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "video/x-flv",
+  "video/x-flv": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.oasis.opendocument.text",
+  "application/vnd.oasis.opendocument.text": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.oasis.opendocument.spreadsheet",
+  "application/vnd.oasis.opendocument.spreadsheet": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.oasis.opendocument.presentation",
+  "application/vnd.oasis.opendocument.presentation": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.oasis.opendocument.graphics",
+  "application/vnd.oasis.opendocument.graphics": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.ms-excel",
+  "application/vnd.ms-excel": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.ms-powerpoint",
+  "application/vnd.ms-powerpoint": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.ms-opentype",
+  "application/vnd.ms-opentype": {
     "compressible": true,
     "sources": [
       "http://www.phpied.com/gzip-your-font-face-files/"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.ms-fontobject",
+  "application/vnd.ms-fontobject": {
     "compressible": true,
     "sources": [
       "http://www.phpied.com/gzip-your-font-face-files/"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+  "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.mozilla.xul+xml",
+  "application/vnd.mozilla.xul+xml": {
     "compressible": true,
     "sources": [
       "http://en.wikipedia.org/wiki/XUL"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.google-earth.kml+xml",
+  "application/vnd.google-earth.kml+xml": {
     "compressible": true,
     "sources": [
       "https://developers.google.com/kml/documentation/kml_tut"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.google-earth.kmz",
+  "application/vnd.google-earth.kmz": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.dart",
+  "application/vnd.dart": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.android.package-archive",
+  "application/vnd.android.package-archive": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/vnd.ms-xpsdocument",
+  "application/vnd.ms-xpsdocument": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-7z-compressed",
+  "application/x-7z-compressed": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-deb",
+  "application/x-deb": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-dvi",
+  "application/x-dvi": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-font-ttf",
+  "application/x-font-ttf": {
     "compressible": true,
     "sources": [
       "http://www.phpied.com/gzip-your-font-face-files/"
     ],
     "notes": ""
   },
-  {
-    "mime": "application/x-javascript",
+  "application/x-javascript": {
     "compressible": true,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-latex",
+  "application/x-latex": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-mpegURL",
+  "application/x-mpegURL": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-rar-compressed",
+  "application/x-rar-compressed": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-shockwave-flash",
+  "application/x-shockwave-flash": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-stuffit",
+  "application/x-stuffit": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-tar",
+  "application/x-tar": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-www-form-urlencode",
+  "application/x-www-form-urlencode": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-xpinstall",
+  "application/x-xpinstall": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/x-aac",
+  "audio/x-aac": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "audio/x-caf",
+  "audio/x-caf": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "image/x-xcf",
+  "image/x-xcf": {
     "compressible": false,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/x-gwt-rpc",
+  "text/x-gwt-rpc": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/x-jquery-tmpl",
+  "text/x-jquery-tmpl": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "text/x-markdown",
+  "text/x-markdown": {
     "compressible": null,
     "sources": [],
     "notes": ""
   },
-  {
-    "mime": "application/x-pkcs1",
+  "application/x-pkcs1": {
     "compressible": false,
     "sources": [],
     "notes": ""
   }
-]
+}
