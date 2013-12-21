@@ -1,10 +1,10 @@
 # Compressible [![Build Status](https://travis-ci.org/expressjs/compressible.png)](https://travis-ci.org/expressjs/compressible)
 
-Compressible mime types.
+Compressible `Content-Type` / `mime` checking.
 
 ## API
 
-### compressible(mime)
+### compressible(type)
 
 ```js
 var compressible = require('compressible')
@@ -18,8 +18,8 @@ Exports `specifications.json`.
 
 ### compressible.regexp
 
-The regular expression that checks the `mime`.
-However, you should use the `compressible` instead of this regular expression in the event that we add non-regexp checks.
+The regular expression that checks the `Content-Type`.
+However, you should use `compressible(type)` instead of this regular expression due to additional non-regex checks.
 
 ## License
 
