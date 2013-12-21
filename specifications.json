@@ -47,7 +47,7 @@
     "notes": ""
   },
   "application/postscript": {
-    "compressible": false,
+    "compressible": true,
     "sources": [],
     "notes": ""
   },
@@ -179,13 +179,31 @@
   },
   "image/tiff": {
     "compressible": false,
-    "sources": [],
+    "sources": [
+      "http://stackoverflow.com/a/12770116"
+    ],
+    "notes": "Gains insignificant in testing."
+  },
+  "image/bmp": {
+    "compressible": true,
+    "sources": [
+      "http://stackoverflow.com/a/12770116"
+    ],
     "notes": ""
+  },
+  "image/x-icon": {
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/ICO_(file_format)"
+    ],
+    "notes": "Usually a wrapper for .bmp formated images."
   },
   "message/http": {
     "compressible": false,
-    "sources": [],
-    "notes": ""
+    "sources": [
+      "http://stackoverflow.com/a/1450163"
+    ],
+    "notes": "It is safest to leave these uncompressed."
   },
   "message/imdn+xml": {
     "compressible": true,
@@ -200,8 +218,10 @@
     "notes": ""
   },
   "message/rfc822": {
-    "compressible": false,
-    "sources": [],
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/MIME#Multipart_subtypes"
+    ],
     "notes": ""
   },
   "model/example": {
@@ -271,6 +291,13 @@
     "sources": [],
     "notes": ""
   },
+  "text/calender": {
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/ICalendar"
+    ],
+    "notes": "Probably needs to be uncompressed before sent to iCalender, though."
+  },
   "text/cmd": {
     "compressible": true,
     "sources": [],
@@ -307,6 +334,25 @@
     "notes": ""
   },
   "text/xml": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "text/cache-manifest": {
+    "compressible": true,
+    "sources": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=715191#c2"
+    ],
+    "notes": "I think so."
+  },
+  "text/n3": {
+    "compressible": true,
+    "sources": [
+      "http://en.wikipedia.org/wiki/Notation3"
+    ],
+    "notes": ""
+  },
+  "text/richtext": {
     "compressible": true,
     "sources": [],
     "notes": ""
@@ -352,8 +398,10 @@
     "notes": ""
   },
   "application/vnd.oasis.opendocument.text": {
-    "compressible": null,
-    "sources": [],
+    "compressible": false,
+    "sources": [
+      "http://en.wikipedia.org/wiki/OpenDocument_technical_specification#File_types"
+    ],
     "notes": ""
   },
   "application/vnd.oasis.opendocument.spreadsheet": {
@@ -377,7 +425,7 @@
     "notes": ""
   },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
-    "compressible": null,
+    "compressible": false,
     "sources": [],
     "notes": ""
   },
@@ -401,12 +449,12 @@
     "notes": ""
   },
   "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
-    "compressible": null,
+    "compressible": false,
     "sources": [],
     "notes": ""
   },
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
-    "compressible": null,
+    "compressible": false,
     "sources": [],
     "notes": ""
   },
@@ -497,7 +545,12 @@
     "notes": ""
   },
   "application/x-tar": {
-    "compressible": false,
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "application/tar": {
+    "compressible": true,
     "sources": [],
     "notes": ""
   },
@@ -527,23 +580,30 @@
     "notes": ""
   },
   "text/x-gwt-rpc": {
-    "compressible": null,
+    "compressible": true,
     "sources": [],
     "notes": ""
   },
   "text/x-jquery-tmpl": {
-    "compressible": null,
+    "compressible": true,
     "sources": [],
     "notes": ""
   },
   "text/x-markdown": {
-    "compressible": null,
+    "compressible": true,
     "sources": [],
     "notes": ""
   },
   "application/x-pkcs1": {
     "compressible": false,
     "sources": [],
+    "notes": ""
+  },
+  "x-shader/x-fragment": {
+    "compressible": true,
+    "sources": [
+      "https://bugzilla.mozilla.org/show_bug.cgi?id=715191#c2"
+    ],
     "notes": ""
   }
 }
