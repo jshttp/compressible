@@ -4,7 +4,7 @@ compressible.specs =
 compressible.specifications = require('./specifications.json')
 
 compressible.regex
-compressible.regexp = /json|text|javascript|dart|ecmascript|xml|x-font-ttf|ms-opentype|ms-fontobject/
+compressible.regexp = /json|text|javascript|dart|ecmascript|xml/
 
 function compressible(type) {
   var spec = compressible.specs[type]
