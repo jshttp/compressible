@@ -25,7 +25,6 @@ describe('regex tests', function () {
 describe('spec lookup tests', function () {
   for (var type in specifications) {
     var value = specifications[type].compressible
-    if (typeof value !== 'boolean') return
     it(type + ' should' + (value ? ' ' : ' not ') + 'be compressible', function () {
       assert.equal(compressible(type), value)
     })
