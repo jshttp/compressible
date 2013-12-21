@@ -3,7 +3,7 @@ module.exports = compressible
 compressible.specs =
 compressible.specifications = require('./specifications.json')
 
-compressible.regex
+compressible.regex =
 compressible.regexp = /json|text|javascript|dart|ecmascript|xml/
 
 function compressible(type) {
