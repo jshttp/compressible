@@ -8,5 +8,5 @@ compressible.regexp = /json|text|javascript|dart|ecmascript|xml|x-font-ttf|ms-op
 
 function compressible(type) {
   var spec = compressible.specs[type]
-  return spec ? spec.compressible : false
+  return spec ? spec.compressible : compressible.regex.test(type)
 }
