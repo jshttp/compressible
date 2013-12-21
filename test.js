@@ -16,9 +16,8 @@ var example_types = [
 
 describe('regex tests', function () {
   example_types.forEach(function (example) {
-    it(example.type + ' should' + (example.should ? ' ' : ' not ') + 'be compressible', function (done) {
+    it(example.type + ' should' + (example.should ? ' ' : ' not ') + 'be compressible', function () {
       assert.equal(compressible(example.type), example.should)
-      done()
     })
   })
 })
