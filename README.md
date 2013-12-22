@@ -12,6 +12,11 @@ compressible('text/html') // -> true
 compressible('image/png') // -> false
 ```
 
+### compressible.get(type)
+
+Returns the specifications object associated with the given `Content-Type`.
+Generates an object using the regex if none is found.
+
 ### compressible.specs
 
 Exports `specifications.json`.
