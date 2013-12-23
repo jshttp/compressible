@@ -14,7 +14,26 @@ var example_types = [
   { type: 'cats', should: false }
 ]
 
-describe('regex tests', function () {
+var object_true = {
+  compressible: true,
+  sources: ["compressible.regex"],
+  notes: "Automatically generated via regex."
+}, object_false = {
+  compressible: false,
+  sources: ["compressible.regex"],
+  notes: "Automatically generated via regex."
+}
+
+describe('Testing if spec lookups are correct.', function () {
+  for (var type in specifications) {
+    var value = specifications[type].compressible
+    it(type + ' should' + (value ? ' ' : ' not ') + 'be compressible', function () {
+      assert.equal(compressible(type), value)
+    })
+  }
+})
+
+describe('Testing if the regex works as intended.', function () {
   example_types.forEach(function (example) {
     it(example.type + ' should' + (example.should ? ' ' : ' not ') + 'be compressible', function () {
       assert.equal(compressible(example.type), example.should)
@@ -22,11 +41,15 @@ describe('regex tests', function () {
   })
 })
 
-describe('spec lookup tests', function () {
-  for (var type in specifications) {
-    var value = specifications[type].compressible
-    it(type + ' should' + (value ? ' ' : ' not ') + 'be compressible', function () {
-      assert.equal(compressible(type), value)
+describe('Testing if getter returns the correct objects.', function () {
+  it('All spec objects should be get-able', function () {
+    for (var type in specifications) {
+      assert.equal(compressible.get(type), specifications[type])
+    }
+  })
+  example_types.forEach(function (example) {
+    it(example.type + ' should generate a ' + (example.should ? 'true' : 'false') + ' object.', function () {
+      assert.deepEqual(compressible.get(example.type), example.should ? object_true: object_false)
     })
-  }
+  })
 })
