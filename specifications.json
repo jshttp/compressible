@@ -33,7 +33,9 @@
   },
   "application/octet-stream": {
     "compressible": false,
-    "sources": [],
+    "sources": [
+      "https://github.com/broofa/node-mime/blob/master/types/mime.types#L154"
+    ],
     "notes": ""
   },
   "application/ogg": {
@@ -103,6 +105,56 @@
     "notes": ""
   },
   "application/gzip": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/x-sh": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "application/x-bzip": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/x-bzip2": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/java-archive": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/java-serialized-object": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/java-vm": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/x-java-jnlp-file": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/x-7z-compressed": {
+    "compressible": false,
+    "sources": [],
+    "notes": ""
+  },
+  "application/rtf": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "application/pgp-encrypted": {
     "compressible": false,
     "sources": [],
     "notes": ""
@@ -353,6 +405,16 @@
     "notes": ""
   },
   "text/richtext": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "text/uri-list": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "text/tab-separated-values": {
     "compressible": true,
     "sources": [],
     "notes": ""
