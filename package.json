@@ -1,7 +1,7 @@
 {
   "name": "compressible",
-  "version": "0.1.1",
   "description": "Compressible Content-Type / mime checking",
+  "version": "0.2.0",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
