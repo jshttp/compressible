@@ -21,7 +21,7 @@ Generates an object using the regex if none is found.
 
 Exports `specifications.json`.
 
-### compressible.regexp
+### compressible.regex
 
 The regular expression that checks the `Content-Type`.
 However, you should use `compressible(type)` instead of this regular expression due to additional non-regex checks.
