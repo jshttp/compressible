@@ -48,7 +48,7 @@ describe('Testing if getter returns the correct objects.', function () {
     }
   })
   example_types.forEach(function (example) {
-    it(example.type + ' should generate a ' + (example.should ? 'true' : 'false') + ' object.', function () {
+    it(example.type + ' should generate a ' + (example.should ? 'true' : 'false') + ' object', function () {
       assert.deepEqual(compressible.get(example.type), example.should ? object_true: object_false)
     })
   })
