@@ -70,6 +70,11 @@ describe('Testing if charsets are handled correctly.', function () {
       assert.equal(compressible(type + '; charset=utf-8'), value)
     }
   })
+  it('Types with charsets should be get-able', function () {
+    for (var type in specifications) {
+      assert.equal(compressible.get(type + '; charset=utf-8'), specifications[type])
+    }
+  })
 })
 
 describe('Ensuring invalid types do not cause errors.', function () {
