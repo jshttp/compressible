@@ -9,12 +9,12 @@ compressible.regexp = /json|text|javascript|dart|ecmascript|xml/
 compressible.get = get
 
 function compressible(type) {
-  var spec = compressible.specs[type]
+  var spec = compressible.specs[type.split(';')[0]]
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
 function get(type) {
-  var spec = compressible.specs[type]
+  var spec = compressible.specs[type.split(';')[0]]
   return spec ? spec : {
     compressible: compressible.regex.test(type),
     sources: ["compressible.regex"],
