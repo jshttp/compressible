@@ -14,6 +14,15 @@ var example_types = [
   { type: 'cats', should: false }
 ]
 
+var invalid_types = [
+  undefined,
+  null,
+  0,
+  1,
+  false,
+  true
+]
+
 var object_true = {
   compressible: true,
   sources: ["compressible.regex"],
@@ -60,5 +69,19 @@ describe('Testing if charsets are handled correctly.', function () {
       var value = specifications[type].compressible
       assert.equal(compressible(type + '; charset=utf-8'), value)
     }
+  })
+})
+
+describe('Ensuring invalid types do not cause errors.', function () {
+  it('No arguments should return false without error', function () {
+    assert.equal(compressible(), false)
+  })
+
+  invalid_types.forEach(function (invalid) {
+    it(invalid + ' should return false without error', function () {
+      assert.doesNotThrow(function () {
+        assert.equal(compressible(invalid), false)
+      })
+    })
   })
 })
