@@ -53,3 +53,12 @@ describe('Testing if getter returns the correct objects.', function () {
     })
   })
 })
+
+describe('Testing if charsets are handled correctly.', function () {
+  it('Charsets should be stripped off without issue', function () {
+    for (var type in specifications) {
+      var value = specifications[type].compressible
+      assert.equal(compressible(type + '; charset=utf-8'), value)
+    }
+  })
+})
