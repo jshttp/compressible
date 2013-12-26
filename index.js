@@ -16,7 +16,7 @@ function compressible(type) {
 
 function get(type) {
   if (!type || typeof type !== "string" || type.constructor !== String) return {
-  	compressible: false,
+    compressible: false,
     sources: [],
     notes: "Invalid type."
   }
