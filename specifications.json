@@ -232,6 +232,13 @@
     "sources": [],
     "notes": ""
   },
+  "application/x-font-otf": {
+    "compressible": true,
+    "sources": [
+      "http://www.phpied.com/gzip-your-font-face-files/"
+    ],
+    "notes": ""
+  },
   "application/x-font-ttf": {
     "compressible": true,
     "sources": [
@@ -379,6 +386,13 @@
   "audio/x-caf": {
     "compressible": false,
     "sources": [],
+    "notes": ""
+  },
+  "font/opentype": {
+    "compressible": true,
+    "sources": [
+      "http://www.phpied.com/gzip-your-font-face-files/"
+    ],
     "notes": ""
   },
   "image/bmp": {
