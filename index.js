@@ -9,13 +9,13 @@ compressible.regexp = /json|text|javascript|dart|ecmascript|xml/
 compressible.get = get
 
 function compressible(type) {
-  if (!type || typeof type !== "string" || type.constructor !== String) return false
+  if (!type || typeof type !== "string") return false
   var spec = compressible.specs[type.split(';')[0]]
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
 function get(type) {
-  if (!type || typeof type !== "string" || type.constructor !== String) return {
+  if (!type || typeof type !== "string") return {
     compressible: false,
     sources: [],
     notes: "Invalid type."
