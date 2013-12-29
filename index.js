@@ -10,7 +10,8 @@ compressible.get = get
 
 function compressible(type) {
   if (!type || typeof type !== "string") return false
-  var spec = compressible.specs[type.split(';')[0]]
+  var i = type.indexOf(';')
+    , spec = compressible.specs[i < 0 ? type : type.slice(0, i)]
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
