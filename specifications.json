@@ -6,6 +6,11 @@
     ],
     "notes": ""
   },
+  "application/dart": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
   "application/EDI-X12": {
     "compressible": false,
     "sources": [],
@@ -53,6 +58,11 @@
   },
   "application/json": {
     "compressible": true,
+    "sources": [],
+    "notes": ""
+  },
+  "application/msword": {
+    "compressible": false,
     "sources": [],
     "notes": ""
   },
@@ -266,7 +276,7 @@
     "sources": [],
     "notes": ""
   },
-  "application/x-pkcs1": {
+  "application/x-pkcs12": {
     "compressible": false,
     "sources": [],
     "notes": ""
@@ -433,6 +443,11 @@
       "http://stackoverflow.com/a/12770116"
     ],
     "notes": "Gains insignificant in testing."
+  },
+  "image/vnd.adobe.photoshop": {
+    "compressible": true,
+    "sources": [],
+    "notes": ""
   },
   "image/x-icon": {
     "compressible": true,
