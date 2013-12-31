@@ -24,9 +24,13 @@
     "url": "https://github.com/expressjs/compressible/issues"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "benchmark": "*",
+    "beautify-benchmark": "*",
+    "mime": "*"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "posttest": "mocha --reporter spec bench.js"
   }
 }
