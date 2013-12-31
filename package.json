@@ -32,7 +32,7 @@
   "devDependencies": {
     "mocha": "*",
     "benchmark": "*",
-    "beautify-benchmark": "*",
+    "beautify-benchmark": "~0.2.2",
     "mime": "*"
   },
   "scripts": {
