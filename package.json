@@ -28,7 +28,7 @@
     "gzip",
     "mime",
     "content-type"
-  ]
+  ],
   "devDependencies": {
     "mocha": "*",
     "benchmark": "*",
