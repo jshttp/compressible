@@ -23,6 +23,12 @@
     "mail": "me@jongleberry.com",
     "url": "https://github.com/expressjs/compressible/issues"
   },
+  "keywords": [
+    "compress",
+    "gzip",
+    "mime",
+    "content-type"
+  ]
   "devDependencies": {
     "mocha": "*",
     "benchmark": "*",
