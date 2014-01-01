@@ -17,10 +17,10 @@ function legacy (type) {
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
-function experiment (type) {
+function previous (type) {
   if (!type || typeof type !== "string") return false
   var i = type.indexOf(';')
-    , spec = compressible.specs[~i ? type.slice(0, i) : type]
+    , spec = compressible.specs[i < 0 ? type : type.slice(0, i)]
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
@@ -29,8 +29,8 @@ describe('Compressible performance benchmarks.', function () {
     suite.add('current', function() {
       compressible(getRandomType())
     })
-    .add('experimental', function () {
-      experiment(getRandomType())
+    .add('previous', function () {
+      previous(getRandomType())
     })
     .add('legacy', function () {
       legacy(getRandomType())
