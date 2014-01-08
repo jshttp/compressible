@@ -3,7 +3,7 @@ var assert = require('assert')
   , suite = new Benchmark.Suite
   , mime = require('mime')
   , keys = Object.keys(mime.types)
-  , compressible = require('./index.js')
+  , compressible = require('../')
   , benchmarks = require('beautify-benchmark')
 
 function getRandomType () {

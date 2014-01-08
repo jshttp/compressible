@@ -36,7 +36,7 @@
     "mime": "*"
   },
   "scripts": {
-    "test": "mocha --reporter spec",
-    "posttest": "mocha --reporter spec bench.js"
+    "test": "mocha --reporter spec test/compressible.js",
+    "posttest": "mocha --reporter spec test/benchmarks.js"
   }
 }

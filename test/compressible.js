@@ -1,7 +1,7 @@
 var assert = require('assert')
 
-var specifications = require('./specifications.json')
-var compressible = require('./')
+var specifications = require('../specifications.json')
+var compressible = require('../')
 
 // None of these should be actual types so that the lookup will never include them.
 var example_types = [
