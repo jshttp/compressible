@@ -21,7 +21,8 @@ function get(type) {
     sources: [],
     notes: "Invalid type."
   }
-  var spec = compressible.specs[type.split(';')[0]]
+  var i = type.indexOf(';')
+    , spec = compressible.specs[~i ? type.slice(0, i) : type]
   return spec ? spec : {
     compressible: compressible.regex.test(type),
     sources: ["compressible.regex"],
