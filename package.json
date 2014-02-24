@@ -8,12 +8,12 @@
     "url": "http://jongleberry.com",
     "twitter": "https://twitter.com/jongleberry"
   },
-  "contributors": {
+  "contributors": [{
     "name": "Jeremiah Senkpiel",
     "email": "fishrock123@rocketmail.com",
     "url": "https://searchbeam.jit.su",
     "twitter": "https://twitter.com/fishrock123"
-  },
+  }],
   "license": "MIT",
   "repository": {
     "type": "git",
