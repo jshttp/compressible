@@ -4,7 +4,7 @@ compressible.specs =
 compressible.specifications = require('./specifications.json')
 
 compressible.regex =
-compressible.regexp = /json|text|javascript|dart|ecmascript|xml/
+compressible.regexp = /json|text|xml/
 
 compressible.get = get
 
