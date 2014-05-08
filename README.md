@@ -1,6 +1,10 @@
-# Compressible [![Build Status](https://travis-ci.org/expressjs/compressible.png)](https://travis-ci.org/expressjs/compressible)
+# compressible [![Build Status](https://travis-ci.org/expressjs/compressible.svg?branch=master)](https://travis-ci.org/expressjs/compressible) [![NPM Version](https://badge.fury.io/js/compressible.svg)](https://badge.fury.io/js/compressible)
 
 Compressible `Content-Type` / `mime` checking.
+
+```
+npm install compressible
+```
 
 ## API
 
@@ -8,8 +12,8 @@ Compressible `Content-Type` / `mime` checking.
 
 ```js
 var compressible = require('compressible')
-compressible('text/html') // -> true
-compressible('image/png') // -> false
+compressible('text/html') // => true
+compressible('image/png') // => false
 ```
 
 ### compressible.get(type)
