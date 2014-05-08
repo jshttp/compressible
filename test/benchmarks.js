@@ -25,7 +25,7 @@ function previous (type) {
 }
 
 describe('Compressible performance benchmarks.', function () {
-  it('Performance of `current` should be within the top 95%', function () {
+  it('Performance of `current` should be within the top 90%', function () {
     suite.add('current', function() {
       compressible(getRandomType())
     })
@@ -45,8 +45,8 @@ describe('Compressible performance benchmarks.', function () {
       console.log('\n  Done!')
       var result = benchmarks.getPercent('current')
       benchmarks.log()
-      if (result < 95)
-        assert.fail('' + result + '%', '95%`', null, '>=', done)
+      if (result < 90)
+        assert.fail('' + result + '%', '90%`', null, '>=', done)
     })
     .run({ 'async': false })
   })
