@@ -688,7 +688,15 @@
   "x-shader/x-fragment": {
     "compressible": true,
     "sources": [
+      "https://developer.mozilla.org/en-US/docs/Web/WebGL/Adding_2D_content_to_a_WebGL_context",
       "https://bugzilla.mozilla.org/show_bug.cgi?id=715191#c2"
+    ],
+    "notes": ""
+  },
+  "x-shader/x-vertex": {
+    "compressible": true,
+    "sources": [
+      "https://developer.mozilla.org/en-US/docs/Web/WebGL/Adding_2D_content_to_a_WebGL_context"
     ],
     "notes": ""
   }
