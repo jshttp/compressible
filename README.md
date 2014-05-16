@@ -2,8 +2,8 @@
 
 Compressible `Content-Type` / `mime` checking.
 
-```
-npm install compressible
+```sh
+$ npm install compressible
 ```
 
 ## API
