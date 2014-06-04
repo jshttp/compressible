@@ -18,7 +18,6 @@ function compressible(type) {
 function get(type) {
   if (!type || typeof type !== "string") return {
     compressible: false,
-    sources: [],
     notes: "Invalid type."
   }
   var i = type.indexOf(';')
