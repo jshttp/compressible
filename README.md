@@ -1,4 +1,7 @@
-# compressible [![Build Status](https://travis-ci.org/expressjs/compressible.svg?branch=master)](https://travis-ci.org/expressjs/compressible) [![NPM Version](https://badge.fury.io/js/compressible.svg)](https://badge.fury.io/js/compressible)
+# compressible
+
+[![Build Status](https://travis-ci.org/expressjs/compressible.svg?branch=master)](https://travis-ci.org/expressjs/compressible)
+[![NPM Version](https://badge.fury.io/js/compressible.svg)](https://badge.fury.io/js/compressible)
 
 Compressible `Content-Type` / `mime` checking.
 
