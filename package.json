@@ -30,13 +30,9 @@
     "content-type"
   ],
   "devDependencies": {
-    "mocha": "*",
-    "benchmark": "*",
-    "beautify-benchmark": "~0.2.4",
-    "mime": "*"
+    "mocha": "*"
   },
   "scripts": {
-    "test": "mocha --reporter spec test/compressible.js",
-    "posttest": "mocha --reporter spec test/benchmarks.js"
+    "test": "mocha --reporter spec test/"
   }
 }
