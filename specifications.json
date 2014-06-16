@@ -400,6 +400,12 @@
   "text/javascript": {
     "compressible": true
   },
+  "text/jsx": {
+    "compressible": true,
+    "sources": [
+      "http://facebook.github.io/react/docs/getting-started.html"
+    ]
+  },
   "text/n3": {
     "compressible": true,
     "sources": [
