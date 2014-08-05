@@ -11,7 +11,8 @@ compressible.get = get
 function compressible(type) {
   if (!type || typeof type !== "string") return false
   var i = type.indexOf(';')
-    , spec = compressible.specs[~i ? type.slice(0, i) : type]
+  if (~i) type = type.slice(0, i)
+  var spec = compressible.specs[type.toLowerCase().trim()]
   return spec ? spec.compressible : compressible.regex.test(type)
 }
 
@@ -21,7 +22,8 @@ function get(type) {
     notes: "Invalid type."
   }
   var i = type.indexOf(';')
-    , spec = compressible.specs[~i ? type.slice(0, i) : type]
+  if (~i) type = type.slice(0, i)
+  var spec = compressible.specs[type.toLowerCase().trim()]
   return spec ? spec : {
     compressible: compressible.regex.test(type),
     sources: ["compressible.regex"],

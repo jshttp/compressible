@@ -88,3 +88,14 @@ describe('Ensuring invalid types do not cause errors.', function () {
     })
   })
 })
+
+describe('Ensuring types are always stripped correctly.', function () {
+  it('Uppercase types should work', function () {
+    assert.equal(compressible('TEXT/HTML'), true)
+    assert.equal(compressible('TEXT/plain; charset="utf-8"'), true)
+  })
+
+  it('White-spaced types should work', function () {
+    assert.equal(compressible('application/json ; charset="utf-8"'), true)
+  })
+})

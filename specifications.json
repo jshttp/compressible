@@ -8,10 +8,10 @@
   "application/dart": {
     "compressible": true
   },
-  "application/EDI-X12": {
+  "application/edi-x12": {
     "compressible": false
   },
-  "application/EDIFACT": {
+  "application/edifact": {
     "compressible": false
   },
   "application/ecmascript": {
@@ -182,7 +182,7 @@
   "application/x-latex": {
     "compressible": false
   },
-  "application/x-mpegURL": {
+  "application/x-mpegurl": {
     "compressible": false
   },
   "application/x-pkcs12": {
@@ -227,7 +227,7 @@
   "application/zip": {
     "compressible": false
   },
-  "audio/L24": {
+  "audio/l24": {
     "compressible": false
   },
   "audio/basic": {
