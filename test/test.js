@@ -1,6 +1,6 @@
 var assert = require('assert')
 
-var specifications = require('../specifications.json')
+var specs = require('../specs.json')
 var compressible = require('../')
 
 // None of these should be actual types so that the lookup will never include them.
@@ -32,8 +32,8 @@ var object_true = {
 }
 
 describe('Testing if spec lookups are correct.', function () {
-  for (var type in specifications) {
-    var value = specifications[type].compressible
+  for (var type in specs) {
+    var value = specs[type].compressible
     it(type + ' should' + (value ? ' ' : ' not ') + 'be compressible', function () {
       assert.equal(compressible(type), value)
     })
@@ -50,8 +50,8 @@ describe('Testing if the regex works as intended.', function () {
 
 describe('Testing if getter returns the correct objects.', function () {
   it('All spec objects should be get-able', function () {
-    for (var type in specifications) {
-      assert.equal(compressible.get(type), specifications[type])
+    for (var type in specs) {
+      assert.equal(compressible.get(type), specs[type])
     }
   })
   example_types.forEach(function (example) {
@@ -63,14 +63,14 @@ describe('Testing if getter returns the correct objects.', function () {
 
 describe('Testing if charsets are handled correctly.', function () {
   it('Charsets should be stripped off without issue', function () {
-    for (var type in specifications) {
-      var value = specifications[type].compressible
+    for (var type in specs) {
+      var value = specs[type].compressible
       assert.equal(compressible(type + '; charset=utf-8'), value)
     }
   })
   it('Types with charsets should be get-able', function () {
-    for (var type in specifications) {
-      assert.equal(compressible.get(type + '; charset=utf-8'), specifications[type])
+    for (var type in specs) {
+      assert.equal(compressible.get(type + '; charset=utf-8'), specs[type])
     }
   })
 })
