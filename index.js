@@ -1,11 +1,7 @@
 module.exports = compressible
 
-compressible.specs =
-compressible.specifications = require('./specifications.json')
-
-compressible.regex =
-compressible.regexp = /json|text|xml/
-
+compressible.specs = require('./specs.json')
+compressible.regex = /json|text|xml/
 compressible.get = get
 
 function compressible(type) {
