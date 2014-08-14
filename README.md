@@ -1,11 +1,15 @@
 # compressible
 
-[![Build Status](https://travis-ci.org/expressjs/compressible.svg?branch=master)](https://travis-ci.org/expressjs/compressible)
-[![NPM Version](https://badge.fury.io/js/compressible.svg)](https://badge.fury.io/js/compressible)
+[![NPM Version](https://img.shields.io/npm/v/compressible.svg?style=flat)](https://www.npmjs.org/package/compressible)
+[![Node.js Version](https://img.shields.io/badge/node.js->=_0.8-blue.svg?style=flat)](http://nodejs.org/download/)
+[![Build Status](http://img.shields.io/travis/expressjs/compressible.svg?style=flat)](https://travis-ci.org/expressjs/compressible)
+
 
 Compressible `Content-Type` / `mime` checking.
 
-```sh
+### Installation
+
+```bash
 $ npm install compressible
 ```
 
