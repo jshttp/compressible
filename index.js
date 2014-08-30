@@ -16,8 +16,6 @@ var db = require('mime-db')
 
 module.exports = compressible
 
-compressible.regex = /json|text|xml/
-
 /**
  * Checks if a type is compressible.
  *
@@ -30,5 +28,5 @@ function compressible(type) {
   var i = type.indexOf(';')
   if (~i) type = type.slice(0, i)
   var mime = db[type.toLowerCase().trim()]
-  return mime ? mime.compressible : compressible.regex.test(type)
+  return mime ? mime.compressible : /text|json|xml/.test(type)
 }
