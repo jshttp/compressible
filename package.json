@@ -15,24 +15,24 @@
     "twitter": "https://twitter.com/fishrock123"
   }],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/expressjs/compressible.git"
-  },
-  "bugs": {
-    "mail": "me@jongleberry.com",
-    "url": "https://github.com/expressjs/compressible/issues"
-  },
+  "repository": "jshttp/compressible",
   "keywords": [
     "compress",
     "gzip",
     "mime",
     "content-type"
   ],
+  "dependencies": {
+    "mime-db": "~1.0.1"
+  },
   "devDependencies": {
+    "istanbul": "0",
     "mocha": "~1.20.1"
   },
   "scripts": {
-    "test": "mocha --reporter spec test/"
-  }
+    "test": "mocha --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "files": ["index.js", "LICENSE"]
 }
