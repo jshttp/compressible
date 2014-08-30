@@ -1,13 +1,16 @@
 var assert = require('assert')
-
 var db = require('mime-db')
 var compressible = require('../')
 
 // None of these should be actual types so that the lookup will never include them.
 var example_types = [
-  { type: 'something/text', should: true },
-  { type: 'type/json', should: true },
+  { type: 'text/penguins', should: true },
+  { type: 'something/text', should: false },
+  { type: 'something/frog+text', should: true },
+  { type: 'type/json', should: false },
+  { type: 'type/+json', should: true },
   { type: 'data/beans+xml', should: true },
+  { type: 'data/xml', should: false },
   { type: 'asdf/nope', should: false },
   { type: 'cats', should: false }
 ]
@@ -21,23 +24,13 @@ var invalid_types = [
   true
 ]
 
-var object_true = {
-  compressible: true,
-  sources: ["compressible.regex"],
-  notes: "Automatically generated via regex."
-}, object_false = {
-  compressible: false,
-  sources: ["compressible.regex"],
-  notes: "Automatically generated via regex."
-}
-
 describe('Testing if spec lookups are correct.', function () {
-  for (var type in db) {
-    var value = db[type].compressible
-    it(type + ' should' + (value ? ' ' : ' not ') + 'be compressible', function () {
+  it('All DB `compressible` types should reflect in compressible', function () {
+    for (var type in db) {
+      var value = db[type].compressible
       assert.equal(compressible(type), value)
-    })
-  }
+    }
+  })
 })
 
 describe('Testing if the regex works as intended.', function () {
