@@ -6,3 +6,4 @@
  * remove .get()
  * specifications are now private
  * regex is now private
+ * stricter regex

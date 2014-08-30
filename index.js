@@ -28,5 +28,5 @@ function compressible(type) {
   var i = type.indexOf(';')
   if (~i) type = type.slice(0, i)
   var mime = db[type.toLowerCase().trim()]
-  return mime ? mime.compressible : /text|json|xml/.test(type)
+  return mime ? mime.compressible : /^text\/|\+json$|\+text$|\+xml$/.test(type)
 }
