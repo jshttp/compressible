@@ -19,18 +19,16 @@ $ npm install compressible
 
 ### compressible(type)
 
+Checks if the given content-type is compressible.
+
 ```js
 var compressible = require('compressible')
+
 compressible('text/html') // => true
 compressible('image/png') // => false
 ```
 
-### compressible.get(type)
-
-Returns the specifications object associated with the given `Content-Type`.
-Generates an object using the regex if none is found.
-
-### [MIT Licensed](LICENSE)
+## [MIT Licensed](LICENSE)
 
 [npm-image]: https://img.shields.io/npm/v/compressible.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/compressible

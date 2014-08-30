@@ -8,12 +8,10 @@
     "url": "http://jongleberry.com",
     "twitter": "https://twitter.com/jongleberry"
   },
-  "contributors": [{
-    "name": "Jeremiah Senkpiel",
-    "email": "fishrock123@rocketmail.com",
-    "url": "https://searchbeam.jit.su",
-    "twitter": "https://twitter.com/fishrock123"
-  }],
+  "contributors": [
+    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+    "Jeremiah Senkpiel <fishrock123@rocketmail.com> (https://searchbeam.jit.su)"
+  ],
   "license": "MIT",
   "repository": "jshttp/compressible",
   "keywords": [
@@ -29,10 +27,16 @@
     "istanbul": "0",
     "mocha": "~1.20.1"
   },
-  "scripts": {
-    "test": "mocha --reporter spec",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  "engines": {
+    "node": ">= 0.6.0"
   },
-  "files": ["index.js", "LICENSE"]
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot -check-leaks",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot --check-leaks"
+  }
 }
