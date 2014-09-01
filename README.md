@@ -1,11 +1,10 @@
 # compressible
 
-[![NPM version][npm-image]][npm-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Dependency Status][david-image]][david-url]
-[![License][license-image]][license-url]
-[![Downloads][downloads-image]][downloads-url]
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Node.js Version][node-version-image]][node-version-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][coveralls-image]][coveralls-url]
 
 Compressible `Content-Type` / `mime` checking.
 
@@ -32,15 +31,11 @@ compressible('image/png') // => false
 
 [npm-image]: https://img.shields.io/npm/v/compressible.svg?style=flat
 [npm-url]: https://npmjs.org/package/compressible
-[github-tag]: http://img.shields.io/github/tag/jshttp/compressible.svg?style=flat
-[github-url]: https://github.com/jshttp/compressible/tags
+[node-version-image]: https://img.shields.io/badge/node.js-%3E%3D_0.6-brightgreen.svg?style=flat
+[node-version-url]: http://nodejs.org/download/
 [travis-image]: https://img.shields.io/travis/jshttp/compressible.svg?style=flat
 [travis-url]: https://travis-ci.org/jshttp/compressible
 [coveralls-image]: https://img.shields.io/coveralls/jshttp/compressible.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/jshttp/compressible?branch=master
-[david-image]: http://img.shields.io/david/jshttp/compressible.svg?style=flat
-[david-url]: https://david-dm.org/jshttp/compressible
-[license-image]: http://img.shields.io/npm/l/compressible.svg?style=flat
-[license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/compressible.svg?style=flat
+[downloads-image]: https://img.shields.io/npm/dm/compressible.svg?style=flat
 [downloads-url]: https://npmjs.org/package/compressible
