@@ -25,8 +25,15 @@ module.exports = compressible
 
 function compressible(type) {
   if (!type || typeof type !== "string") return false
+
+  // Strip charset
   var i = type.indexOf(';')
   if (~i) type = type.slice(0, i)
-  var mime = db[type.toLowerCase().trim()]
+
+  // handle types that have capitals or excess space
+  type = type.trim().toLowerCase()
+  
+  // attempt to look up from database; fallback to regex if not found
+  var mime = db[type]
   return mime ? mime.compressible : /^text\/|\+json$|\+text$|\+xml$/.test(type)
 }

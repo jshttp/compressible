@@ -6,10 +6,11 @@ var compressible = require('../')
 var example_types = [
   { type: 'text/penguins', should: true },
   { type: 'something/text', should: false },
-  { type: 'something/frog+text', should: true },
-  { type: 'type/json', should: false },
+  { type: 'something/frog+TEXT', should: true },
+  { type: 'type/json;askjkl+json', should: false },
   { type: 'type/+json', should: true },
-  { type: 'data/beans+xml', should: true },
+  { type: 'data/beans+xml ; charset="utf-8"', should: true },
+  { type: 'can/worms+xml;blaaaah', should: true },
   { type: 'data/xml', should: false },
   { type: 'asdf/nope', should: false },
   { type: 'cats', should: false }
