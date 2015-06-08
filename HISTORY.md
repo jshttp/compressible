@@ -1,3 +1,8 @@
+unreleased
+==========
+
+  * perf: use regex to extract mime
+
 2.0.2 / 2015-01-31
 ==================
 

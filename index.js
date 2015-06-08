@@ -2,6 +2,7 @@
  * compressible
  * Copyright(c) 2013 Jonathan Ong
  * Copyright(c) 2014 Jeremiah Senkpiel
+ * Copyright(c) 2015 Douglas Christopher Wilson
  * MIT Licensed
  */
 
@@ -11,6 +12,13 @@
  */
 
 var db = require('mime-db')
+
+/**
+ * Module variables.
+ * @private
+ */
+
+var extractTypeRegExp = /^\s*([^;\s]*)(?:;|\s|$)/
 
 /**
  * Module exports.
@@ -28,16 +36,17 @@ module.exports = compressible
  */
 
 function compressible(type) {
-  if (!type || typeof type !== "string") return false
+  if (!type || typeof type !== 'string') {
+    return false
+  }
 
-  // Strip charset
-  var i = type.indexOf(';')
-  if (~i) type = type.slice(0, i)
+  // strip parameters
+  var match = extractTypeRegExp.exec(type)
+  var mime = match && db[match[1].toLowerCase()]
 
-  // handle types that have capitals or excess space
-  type = type.trim().toLowerCase()
-  
-  // attempt to look up from database; fallback to regex if not found
-  var mime = db[type]
-  return mime ? mime.compressible : /^text\/|\+json$|\+text$|\+xml$/.test(type)
+  if (mime) {
+    return mime.compressible
+  }
+
+  return match ? /^text\/|\+json$|\+text$|\+xml$/i.test(match[1]) : false
 }
