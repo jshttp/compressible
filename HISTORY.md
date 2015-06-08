@@ -4,6 +4,7 @@ unreleased
   * Fix regex fallback to work if type exists, but is undefined
   * perf: hoist regex declaration
   * perf: use regex to extract mime
+  * deps: mime-db@'>= 1.13.0 < 2'
 
 2.0.2 / 2015-01-31
 ==================
