@@ -1,6 +1,7 @@
 unreleased
 ==========
 
+  * Fix regex fallback to work if type exists, but is undefined
   * perf: hoist regex declaration
   * perf: use regex to extract mime
 

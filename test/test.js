@@ -7,15 +7,16 @@ var example_types = [
   { type: 'text/penguins', should: true },
   { type: 'text/html', should: true },
   { type: 'text/plain', should: true },
-  { type: 'something/text', should: false },
+  { type: 'text/jade', should: true },
+  { type: 'something/text', should: undefined },
   { type: 'something/frog+TEXT', should: true },
-  { type: 'type/json;askjkl+json', should: false },
+  { type: 'type/json;askjkl+json', should: undefined },
   { type: 'type/+json', should: true },
   { type: 'data/beans+xml ; charset="utf-8"', should: true },
   { type: 'can/worms+xml;blaaaah', should: true },
-  { type: 'data/xml', should: false },
-  { type: 'asdf/nope', should: false },
-  { type: 'cats', should: false }
+  { type: 'data/xml', should: undefined },
+  { type: 'asdf/nope', should: undefined },
+  { type: 'cats', should: undefined }
 ]
 
 var invalid_types = [
@@ -30,8 +31,9 @@ var invalid_types = [
 describe('Testing if spec lookups are correct.', function () {
   it('All DB `compressible` types should reflect in compressible', function () {
     for (var type in db) {
-      var value = db[type].compressible
-      assert.equal(compressible(type), value)
+      if (db[type].compressible !== undefined) {
+        assert.equal(compressible(type), db[type].compressible)
+      }
     }
   })
 })
@@ -39,7 +41,7 @@ describe('Testing if spec lookups are correct.', function () {
 describe('Testing if the regex works as intended.', function () {
   example_types.forEach(function (example) {
     it(example.type + ' should' + (example.should ? ' ' : ' not ') + 'be compressible', function () {
-      assert.equal(compressible(example.type), example.should)
+      assert.strictEqual(compressible(example.type), example.should)
     })
   })
 })
@@ -47,8 +49,9 @@ describe('Testing if the regex works as intended.', function () {
 describe('Testing if charsets are handled correctly.', function () {
   it('Charsets should be stripped off without issue', function () {
     for (var type in db) {
-      var value = db[type].compressible
-      assert.equal(compressible(type + '; charset=utf-8'), value)
+      if (db[type].compressible !== undefined) {
+        assert.equal(compressible(type + '; charset=utf-8'), db[type].compressible)
+      }
     }
   })
 })
