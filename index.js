@@ -18,6 +18,7 @@ var db = require('mime-db')
  * @private
  */
 
+var compressibleTypeRegExp = /^text\/|\+json$|\+text$|\+xml$/i
 var extractTypeRegExp = /^\s*([^;\s]*)(?:;|\s|$)/
 
 /**
@@ -42,11 +43,12 @@ function compressible(type) {
 
   // strip parameters
   var match = extractTypeRegExp.exec(type)
-  var mime = match && db[match[1].toLowerCase()]
+  var mime = match && match[1].toLowerCase()
+  var data = db[mime]
 
-  if (mime) {
-    return mime.compressible
+  if (data) {
+    return data.compressible
   }
 
-  return match ? /^text\/|\+json$|\+text$|\+xml$/i.test(match[1]) : false
+  return compressibleTypeRegExp.test(mime)
 }

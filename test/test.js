@@ -5,6 +5,8 @@ var compressible = require('../')
 // None of these should be actual types so that the lookup will never include them.
 var example_types = [
   { type: 'text/penguins', should: true },
+  { type: 'text/html', should: true },
+  { type: 'text/plain', should: true },
   { type: 'something/text', should: false },
   { type: 'something/frog+TEXT', should: true },
   { type: 'type/json;askjkl+json', should: false },
