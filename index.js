@@ -1,17 +1,20 @@
 /*!
  * compressible
+ * Copyright(c) 2013 Jonathan Ong
  * Copyright(c) 2014 Jeremiah Senkpiel
  * MIT Licensed
  */
 
 /**
  * Module dependencies.
+ * @private
  */
 
 var db = require('mime-db')
 
 /**
  * Module exports.
+ * @public
  */
 
 module.exports = compressible
@@ -21,6 +24,7 @@ module.exports = compressible
  *
  * @param {string} type
  * @return {Boolean} compressible
+ & @public
  */
 
 function compressible(type) {
