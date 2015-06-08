@@ -1,5 +1,5 @@
-unreleased
-==========
+2.0.3 / 2015-06-08
+==================
 
   * Fix regex fallback to work if type exists, but is undefined
   * perf: hoist regex declaration
