@@ -2,6 +2,7 @@ unreleased
 ==========
 
   * deps: mime-db@'>= 1.14.0 < 2'
+  * perf: enable strict mode
 
 2.0.3 / 2015-06-08
 ==================
