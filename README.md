@@ -32,7 +32,7 @@ compressible('image/png') // => false
 [npm-image]: https://img.shields.io/npm/v/compressible.svg
 [npm-url]: https://npmjs.org/package/compressible
 [node-version-image]: https://img.shields.io/node/v/compressible.svg
-[node-version-url]: http://nodejs.org/download/
+[node-version-url]: https://nodejs.org/en/download/
 [travis-image]: https://img.shields.io/travis/jshttp/compressible/master.svg
 [travis-url]: https://travis-ci.org/jshttp/compressible
 [coveralls-image]: https://img.shields.io/coveralls/jshttp/compressible/master.svg
