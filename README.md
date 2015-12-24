@@ -8,7 +8,7 @@
 
 Compressible `Content-Type` / `mime` checking.
 
-### Installation
+## Installation
 
 ```bash
 $ npm install compressible
@@ -16,18 +16,23 @@ $ npm install compressible
 
 ## API
 
-### compressible(type)
-
-Checks if the given content-type is compressible.
-
 ```js
 var compressible = require('compressible')
+```
 
+### compressible(type)
+
+Checks if the given `Content-Type` is compressible. The `type` argument is expected
+to be a value MIME type or `Content-Type` string, though no validation is performed.
+
+```js
 compressible('text/html') // => true
 compressible('image/png') // => false
 ```
 
-## [MIT Licensed](LICENSE)
+## License
+
+[MIT](LICENSE)
 
 [npm-image]: https://img.shields.io/npm/v/compressible.svg
 [npm-url]: https://npmjs.org/package/compressible
