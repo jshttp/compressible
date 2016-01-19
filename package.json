@@ -3,6 +3,7 @@
   "description": "Compressible Content-Type / mime checking",
   "version": "2.0.6",
   "contributors": [
+    "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
     "Jeremiah Senkpiel <fishrock123@rocketmail.com> (https://searchbeam.jit.su)"
   ],
