@@ -16,7 +16,7 @@
     "content-type"
   ],
   "dependencies": {
-    "mime-db": ">= 1.21.0 < 2"
+    "mime-db": ">= 1.22.0 < 2"
   },
   "devDependencies": {
     "istanbul": "0.4.2",
