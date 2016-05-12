@@ -3,7 +3,7 @@ var db = require('mime-db')
 var compressible = require('../')
 
 // None of these should be actual types so that the lookup will never include them.
-var example_types = [
+var EXAMPLE_TYPES = [
   { type: 'text/penguins', should: true },
   { type: 'text/html', should: true },
   { type: 'text/plain', should: true },
@@ -19,7 +19,7 @@ var example_types = [
   { type: 'cats', should: undefined }
 ]
 
-var invalid_types = [
+var INVALID_TYPES = [
   undefined,
   null,
   0,
@@ -39,7 +39,7 @@ describe('Testing if spec lookups are correct.', function () {
 })
 
 describe('Testing if the regex works as intended.', function () {
-  example_types.forEach(function (example) {
+  EXAMPLE_TYPES.forEach(function (example) {
     it(example.type + ' should' + (example.should ? ' ' : ' not ') + 'be compressible', function () {
       assert.strictEqual(compressible(example.type), example.should)
     })
@@ -61,7 +61,7 @@ describe('Ensuring invalid types do not cause errors.', function () {
     assert.equal(compressible(), false)
   })
 
-  invalid_types.forEach(function (invalid) {
+  INVALID_TYPES.forEach(function (invalid) {
     it(invalid + ' should return false without error', function () {
       assert.doesNotThrow(function () {
         assert.equal(compressible(invalid), false)
