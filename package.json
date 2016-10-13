@@ -36,7 +36,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "eslint .",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot --check-leaks"
