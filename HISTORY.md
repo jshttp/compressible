@@ -1,3 +1,8 @@
+unreleased
+==========
+
+  * Fix regex fallback to not override `compressible: false` in db
+
 2.0.8 / 2016-05-12
 ==================
 
