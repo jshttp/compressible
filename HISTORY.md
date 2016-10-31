@@ -1,5 +1,5 @@
-unreleased
-==========
+2.0.9 / 2016-10-31
+==================
 
   * Fix regex fallback to not override `compressible: false` in db
   * deps: mime-db@'>= 1.24.0 < 2'
