@@ -10,7 +10,7 @@ Compressible `Content-Type` / `mime` checking.
 
 ## Installation
 
-```bash
+```sh
 $ npm install compressible
 ```
 
