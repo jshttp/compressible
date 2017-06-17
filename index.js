@@ -20,7 +20,7 @@ var db = require('mime-db')
  * @private
  */
 
-var COMPRESSIBLE_TYPE_REGEXP = /^text\/|\+json$|\+text$|\+xml$/i
+var COMPRESSIBLE_TYPE_REGEXP = /^text\/|\+(?:json|text|xml)$/i
 var EXTRACT_TYPE_REGEXP = /^\s*([^;\s]*)(?:;|\s|$)/
 
 /**
