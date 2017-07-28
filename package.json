@@ -1,7 +1,7 @@
 {
   "name": "compressible",
   "description": "Compressible Content-Type / mime checking",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "contributors": [
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
