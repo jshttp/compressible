@@ -27,7 +27,7 @@
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-standard": "3.1.0",
     "mocha": "~1.21.5",
-    "nyc": "11.5.0"
+    "nyc": "11.9.0"
   },
   "engines": {
     "node": ">= 0.6"
