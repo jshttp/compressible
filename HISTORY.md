@@ -1,5 +1,5 @@
-unreleased
-==========
+2.0.14 / 2019-06-05
+===================
 
   * deps: mime-db@'>= 1.34.0 < 2'
     - Mark all XML-derived types as compressible
