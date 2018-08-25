@@ -32,7 +32,7 @@ describe('Testing if spec lookups are correct.', function () {
   it('All DB `compressible` types should reflect in compressible', function () {
     for (var type in db) {
       if (db[type].compressible !== undefined) {
-        assert.equal(compressible(type), db[type].compressible)
+        assert.strictEqual(compressible(type), db[type].compressible)
       }
     }
   })
@@ -50,7 +50,7 @@ describe('Testing if charsets are handled correctly.', function () {
   it('Charsets should be stripped off without issue', function () {
     for (var type in db) {
       if (db[type].compressible !== undefined) {
-        assert.equal(compressible(type + '; charset=utf-8'), db[type].compressible)
+        assert.strictEqual(compressible(type + '; charset=utf-8'), db[type].compressible)
       }
     }
   })
@@ -58,13 +58,13 @@ describe('Testing if charsets are handled correctly.', function () {
 
 describe('Ensuring invalid types do not cause errors.', function () {
   it('No arguments should return false without error', function () {
-    assert.equal(compressible(), false)
+    assert.strictEqual(compressible(), false)
   })
 
   INVALID_TYPES.forEach(function (invalid) {
     it(invalid + ' should return false without error', function () {
       assert.doesNotThrow(function () {
-        assert.equal(compressible(invalid), false)
+        assert.strictEqual(compressible(invalid), false)
       })
     })
   })
@@ -72,11 +72,11 @@ describe('Ensuring invalid types do not cause errors.', function () {
 
 describe('Ensuring types are always stripped correctly.', function () {
   it('Uppercase types should work', function () {
-    assert.equal(compressible('TEXT/HTML'), true)
-    assert.equal(compressible('TEXT/plain; charset="utf-8"'), true)
+    assert.strictEqual(compressible('TEXT/HTML'), true)
+    assert.strictEqual(compressible('TEXT/plain; charset="utf-8"'), true)
   })
 
   it('White-spaced types should work', function () {
-    assert.equal(compressible('application/json ; charset="utf-8"'), true)
+    assert.strictEqual(compressible('application/json ; charset="utf-8"'), true)
   })
 })
