@@ -16,7 +16,7 @@
     "content-type"
   ],
   "dependencies": {
-    "mime-db": ">= 1.36.0 < 2"
+    "mime-db": ">= 1.37.0 < 2"
   },
   "devDependencies": {
     "eslint": "5.5.0",
