@@ -69,14 +69,14 @@ before_install:
 script:
   - |
     # Run test script, depending on nyc install
-    if [[ -n "$(npm -ps ls nyc)" ]]; then
+    if npm -ps ls nyc | grep -q nyc; then
       npm run-script test-travis
     else
       npm test
     fi
   - |
     # Run linting, depending on eslint install
-    if [[ -n "$(npm -ps ls eslint)" ]]; then
+    if npm -ps ls eslint | grep -q eslint; then
       npm run-script lint
     fi
 after_script:
