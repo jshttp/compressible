@@ -1,5 +1,5 @@
-unreleased
-==========
+2.0.16 / 2019-02-18
+===================
 
   * deps: mime-db@'>= 1.38.0 < 2'
     - Mark `text/less` as compressible
