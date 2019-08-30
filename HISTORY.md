@@ -1,3 +1,9 @@
+unreleased
+==========
+
+  * deps: mime-db@'>= 1.41.0 < 2'
+    - Mark `font/ttf` as compressible
+
 2.0.17 / 2019-04-24
 ===================
 
