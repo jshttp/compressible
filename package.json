@@ -19,7 +19,7 @@
     "mime-db": ">= 1.41.0 < 2"
   },
   "devDependencies": {
-    "eslint": "6.4.0",
+    "eslint": "6.6.0",
     "eslint-config-standard": "14.1.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-markdown": "1.0.1",
