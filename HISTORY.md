@@ -1,7 +1,7 @@
 unreleased
 ==========
 
-  * deps: mime-db@'>= 1.42.0 < 2'
+  * deps: mime-db@'>= 1.43.0 < 2'
     - Mark `font/ttf` as compressible
     - Remove compressible from `multipart/mixed`
 
