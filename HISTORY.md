@@ -1,5 +1,5 @@
-unreleased
-==========
+2.0.18 / 2020-01-05
+===================
 
   * deps: mime-db@'>= 1.43.0 < 2'
     - Mark `font/ttf` as compressible
