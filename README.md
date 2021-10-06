@@ -3,7 +3,7 @@
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Node.js Version][node-version-image]][node-version-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][ci-image]][ci-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 
 Compressible `Content-Type` / `mime` checking.
@@ -50,6 +50,8 @@ compressible('image/png') // => false
 
 [MIT](LICENSE)
 
+[ci-image]: https://badgen.net/github/checks/jshttp/compressible/master?label=ci
+[ci-url]: https://github.com/jshttp/compressible/actions?query=workflow%3Aci
 [coveralls-image]: https://badgen.net/coveralls/c/github/jshttp/compressible/master
 [coveralls-url]: https://coveralls.io/r/jshttp/compressible?branch=master
 [node-version-image]: https://badgen.net/npm/node/compressible
@@ -57,5 +59,3 @@ compressible('image/png') // => false
 [npm-downloads-image]: https://badgen.net/npm/dm/compressible
 [npm-url]: https://npmjs.org/package/compressible
 [npm-version-image]: https://badgen.net/npm/v/compressible
-[travis-image]: https://badgen.net/travis/jshttp/compressible/master
-[travis-url]: https://travis-ci.org/jshttp/compressible
