@@ -16,8 +16,6 @@ $ npm install compressible
 
 ## API
 
-<!-- eslint-disable no-unused-vars -->
-
 ```js
 var compressible = require('compressible')
 ```
@@ -38,8 +36,6 @@ this module will fallback to `true` for the following types:
 
 If this module is not sure if a type is specifically compressible or specifically
 uncompressible, `undefined` is returned.
-
-<!-- eslint-disable no-undef -->
 
 ```js
 compressible('text/html') // => true
