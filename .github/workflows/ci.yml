@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         name:
@@ -73,19 +73,19 @@ jobs:
 
         - name: Node.js 6.x
           node-version: "6.17"
-          npm-i: mocha@6.2.2 nyc@14.1.1
+          npm-i: mocha@6.2.3 nyc@14.1.1
 
         - name: Node.js 7.x
           node-version: "7.10"
-          npm-i: mocha@6.2.2 nyc@14.1.1
+          npm-i: mocha@6.2.3 nyc@14.1.1
 
         - name: Node.js 8.x
           node-version: "8.17"
-          npm-i: mocha@7.2.0
+          npm-i: mocha@7.2.0 nyc@14.1.1
 
         - name: Node.js 9.x
           node-version: "9.11"
-          npm-i: mocha@7.2.0
+          npm-i: mocha@7.2.0 nyc@14.1.1
 
         - name: Node.js 10.x
           node-version: "10.24"
@@ -108,7 +108,7 @@ jobs:
           node-version: "15.14"
 
         - name: Node.js 16.x
-          node-version: "16.14"
+          node-version: "16.13"
 
         - name: Node.js 17.x
           node-version: "17.4"
@@ -139,7 +139,15 @@ jobs:
         dirname "$(nvm which ${{ matrix.node-version }})" >> "$GITHUB_PATH"
 
     - name: Configure npm
-      run: npm config set shrinkwrap false
+      run: |
+        if [[ "$(npm config get package-lock)" == "true" ]]; then
+          npm config set package-lock false
+        else
+          npm config set shrinkwrap false
+        fi
+
+    - name: Remove non-test npm modules
+      run: npm rm --silent --save-dev csv-parse raw-body stream-to-array
 
     - name: Remove npm module(s) ${{ matrix.npm-rm }}
       run: npm rm --silent --save-dev ${{ matrix.npm-rm }}
@@ -190,7 +198,7 @@ jobs:
       uses: coverallsapp/github-action@master
       if: steps.list_env.outputs.nyc != ''
       with:
-        github-token: ${{ secrets.github_token }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         flag-name: run-${{ matrix.test_number }}
         parallel: true
 
@@ -201,5 +209,5 @@ jobs:
     - name: Upload code coverage
       uses: coverallsapp/github-action@master
       with:
-        github-token: ${{ secrets.github_token }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         parallel-finished: true
