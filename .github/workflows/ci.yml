@@ -4,9 +4,15 @@ on:
 - pull_request
 - push
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      checks: write  # for coverallsapp/github-action to create new checks
+      contents: read  # for actions/checkout to fetch code
     strategy:
       matrix:
         name:
@@ -213,6 +219,8 @@ jobs:
         parallel: true
 
   coverage:
+    permissions:
+      checks: write  # for coverallsapp/github-action to create new checks
     needs: test
     runs-on: ubuntu-latest
     steps:
