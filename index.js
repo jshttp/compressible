@@ -34,25 +34,20 @@ module.exports = compressible
  * Checks if a type is compressible.
  *
  * @param {string} type
- * @return {Boolean} compressible
+ * @return {(boolean|undefined)} Returns `true` if compressible, `false` if not, or `undefined` if indeterminate.
  * @public
  */
 
 function compressible (type) {
-  if (!type || typeof type !== 'string') {
-    return false
-  }
+  if (typeof type !== 'string') return false
 
-  // strip parameters
   var match = EXTRACT_TYPE_REGEXP.exec(type)
-  var mime = match && match[1].toLowerCase()
+  if (!match) return undefined
+
+  var mime = match[1].toLowerCase()
   var data = db[mime]
 
-  // return database information
-  if (data && data.compressible !== undefined) {
-    return data.compressible
-  }
-
-  // fallback to regexp or unknown
-  return COMPRESSIBLE_TYPE_REGEXP.test(mime) || undefined
+  return typeof data !== 'undefined' && typeof data.compressible !== 'undefined'
+    ? data.compressible
+    : COMPRESSIBLE_TYPE_REGEXP.test(mime) || undefined
 }
